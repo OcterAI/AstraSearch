@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astra Search</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  
+  <!-- KaTeX CSS for LaTeX rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwZuNaxpWE3O6hGzTR2inAPZHIcd0Lrz8MtfJeiBIhDCifmcdIe24s" crossorigin="anonymous">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary: #4a55e0;
+      --on-primary: #ffffff;
+      --primary-container: #e0e0ff;
+      --on-primary-container: #000766;
+      --surface: #f8f8ff;
+      --on-surface: #1b1b21;
+      --surface-variant: #e1e1f0;
+      --on-surface-variant: #44464f;
+      --outline: #757680;
+      --background: #fdfbff;
+      --error: #ba1a1a;
+      --on-error: #ffffff;
+      --error-container: #ffdad6;
+      --on-error-container: #410002;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #bec2ff;
+        --on-primary: #192172;
+        --primary-container: #323a9a;
+        --on-primary-container: #e0e0ff;
+        --surface: #1d1d26;
+        --on-surface: #e4e1e9;
+        --surface-variant: #44464f;
+        --on-surface-variant: #c5c5d0;
+        --outline: #8f909a;
+        --background: #131318;
+        --error: #ffb4ab;
+        --on-error: #690005;
+        --error-container: #93000a;
+        --on-error-container: #ffdad6;
+      }
+    }
+
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fade-in 0.5s ease-out forwards;
+    }
+    body {
+      background-color: var(--background);
+      font-family: 'Inter', sans-serif;
+    }
+    
+    /* Typographic Hierarchy */
+    h1 {
+      font-weight: 800; /* Extra Bold */
+    }
+    h2 {
+      font-weight: 600; /* Semi-Bold */
+    }
+    h3 {
+      font-weight: 600; /* Semi-Bold */
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+  <!-- KaTeX JS for LaTeX rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1YxFjUJeuozprCtmNCoDRtnVDBRNj5RDjA2A/C/jing" crossorigin="anonymous"></script>
+  <!-- function-plot JS for graphing (includes d3) -->
+  <script src="https://cdn.jsdelivr.net/npm/function-plot@1.22.9/dist/function-plot.js"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "Astra Search",
+  "description": "A modern search engine powered by Gemini and Google Search grounding for up-to-date and accurate information.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
